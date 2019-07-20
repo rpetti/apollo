@@ -130,7 +130,7 @@ class EventCommand(commands.Cog):
                 utc_start_time = (
                     arrow.get(
                         start_time_str,
-                        ["YYYY-MM-DD h:mm A", "YYYY-MM-DD HH:mm"],
+                        ["YYYY-MM-DD h:mm A", "YYYY-MM-DD HH:mm", "DD/MM/YYYY HH:mm"],
                         tzinfo=iso_time_zone,
                     )
                     .to("utc")
